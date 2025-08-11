@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/01432f44a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="./thumbnail.jpg" alt="thumbnail" class="song-img" />
+        <h1>Haan Ke Haan Maharaj</h1>
+        <p>Sohail Sen, Monali Thakur, Kausar Munir</p>
+        <audio id="song">
+          <source src="./Haan Ke Haan Maharaj.mp3" type="audio/mp3" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="time">
+          <span id="current-time">0:00</span>
+          <span id="duration">0.34</span>
+        </div>
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!--end  -->
